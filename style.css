@@ -1,0 +1,755 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s ease-in;
+}
+
+*::before,
+*::after {
+    transition: 1s;
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top_header {
+    width: 80%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 8%;
+    height: 90%;
+    background: url(images/logo.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.cont_search {
+    width: 50%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    width: 55%;
+    height: 40%;
+    border: none;
+    outline: none;
+    background: rgb(231, 231, 231);
+}
+
+.search input::placeholder {
+    padding-left: 4%;
+}
+
+.search i {
+    width: 4%;
+    height: 40%;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.search i:hover {
+    background: black;
+
+}
+
+.lang {
+    width: 10%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.lang button {
+    width: 55px;
+    height: 22px;
+    background: transparent;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.eng {
+    border-right: 1px solid !important; 
+}
+
+nav {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    list-style: none;
+}
+
+.menu li {
+    padding: 5px 3px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.account_cart {
+    width: 13%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-right: 7%;
+}
+
+.account_cart div {
+    border: 1px solid silver;
+    cursor: pointer;
+}
+
+.myAccount {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.shop_cart {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.account_cart i {
+    color: transparent;
+    -webkit-text-stroke: .5px silver;
+    font-size: 20px;
+}
+
+.account_cart p {
+    color: #464646;
+    letter-spacing: 1px;
+}
+
+.top_slider {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/home3/slider/1.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nextSlider {
+    width: 50px;
+    height: 50px;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    font-size: 40px;
+    border: none;
+    position: absolute;
+    right: -2%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.prevSlider {
+    width: 50px;
+    height: 50px;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    font-size: 40px;
+    border: none;
+    position: absolute;
+    left: -2%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.top_slider:hover  .nextSlider {
+    right: 1%;
+}
+
+.top_slider:hover  .prevSlider {
+    left: 1%;
+}
+
+.info_wear {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content_infoWear {
+    width: 370px;
+    height: 270px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgWear1 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/home3/banner/1.webp);
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.content_infoWear:hover {
+    background-size: 120%;
+}
+
+.imgWear2 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/home3/banner/2.webp);
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.imgWear3 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/home3/banner/3.webp);
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.content_infoWear button {
+    padding: 15px 25px;
+    border: 2px solid white;
+    background: silver;
+    position: absolute;
+    bottom: 5%;
+    color: white;
+    transform: scale(0);
+    transition: 1s;
+}
+
+.content_infoWear:hover .btnWear {
+    transform: scale(1);
+}
+
+.text_wear {
+    width: 60%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    border-bottom: 1px solid silver;
+}
+
+.view_products {
+    width: 68%;
+    height: 800px;
+    margin: 1% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left_viewProducts {
+    width: 50%;
+    height: 100%;
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/home3/featured/1.webp);
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.left_viewProducts:hover {
+    background-size: 110%;
+}
+
+.right_viewProducts {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+
+.viewProducts p {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: black;
+    font-size: 30px;
+}
+
+
+.item_viewProducts {
+    width: 250px;
+    height: 350px;
+    position: relative;
+    cursor: pointer;
+}
+
+.itemw1 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/home3/featured/2.webp);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.itemw2 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/home3/featured/3.webp);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.itemw3 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/home3/featured/4.webp);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.itemw4 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/home3/featured/5.webp);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item_viewProducts p {
+    color: black !important;
+}
+
+.item_viewProducts:hover {
+    background-size: 110%;
+}
+
+.newArrival {
+    width: 100%;
+    height: 350px;
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/banner/bannertnm-9.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.container_products {
+    width: 90%;
+    height: 1200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+}
+
+.top_products {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid silver;
+    padding-bottom: 1%;
+}
+
+.top_header h2 {
+    color: #464646;
+}
+
+.top_header p {
+    font-size: 16px;
+    cursor: pointer;
+    color: silver;
+}
+
+.products {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.content_prod {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.prod {
+    width: 370px;
+    height: 490px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+
+.item_prodImg {
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+.prod1 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/product/all/1.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.prod2 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/product/all/2.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.prod3 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/product/all/3.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.prod4 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/product/all/4.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.prod5 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/product/all/5.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.prod6 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/product/all/6.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.prod7 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/product/all/7.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.prod8 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/product/all/8.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.content_prodImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    opacity: 0;
+}
+
+.prod:hover .content_prodImg {
+    opacity: 1;
+}
+
+.content_prodImg i {
+    width: 40px;
+    height: 40px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+
+.contentImg1 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/product/all/16.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.contentImg2 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/product/all/15.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.contentImg3 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/product/all/14.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.contentImg4 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/product/all/13.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.contentImg5 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/product/all/12.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.contentImg6 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/product/all/11.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.contentImg7 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/product/all/10.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.contentImg8 {
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/product/all/9.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.stars {
+    width: 100%;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: .5rem; */
+}
+
+.itemStar {
+    width: 20px;
+    height: 20px;
+    background: #464646;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.noStar {
+    background: silver;
+}
+
+.finishMain {
+    width: 90%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: auto;
+}
+
+.leftFinish {
+    width: 47%;
+    height: 100%;
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/home3/trending/2.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.leftFinish::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/home3/trending/3.webp);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.leftFinish:hover::after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.top_leftFinish {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+}
+
+.itemTop {
+    width: 100px;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.itemTop i {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-size: 25px;
+}
+
+.itemTop p {
+    color: white;
+    font-size: 26px;
+}
+
+.rightFinish {
+    width: 47%;
+    height: 100%;
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/home3/trending/3.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.rightFinish::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url(https://htmldemo.net/sassy-girl-v1/sassy-girl/assets/images/home3/trending/4.webp);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.rightFinish:hover::after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.content_finish {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 14%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    z-index: 1;
+}
+
+.content_finish button {
+    width: 120px;
+    height: 120px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #464646;
+    font-size: 25px;
+    border: none;
+}
+
+.item_finish {
+    width: 400px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.item_finish h2 {
+    color: white;
+    font-size: 22px;
+}
+
+.item_finish p {
+    color: white;
+    font-size: 17px;
+}
+
